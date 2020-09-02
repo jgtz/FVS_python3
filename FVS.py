@@ -86,7 +86,7 @@ def FVS(G, T_0 = 0.6, alpha = 0.99, maxMvt_factor = 5, maxFail = 50, randomseed=
   '''
   #make sure input is a directed graph, undirected graph will be converted into a directed graph
   if not nx.is_directed(G):
-    print "Warning: undirected graph is converted to directed graph!"
+    print("Warning: undirected graph is converted to directed graph!")
     Gtemp=G.to_directed()
   else:
     Gtemp=G.copy()
