@@ -21,8 +21,16 @@ FVS_test.py contains three examples illustrating how to use the code.
 
 # III)	INSTRUCTIONS  
 
-To use this module, import FVS and call FVS() just as a regular function.  
-The function can take 6 paramters listed below and only the first (the graph) is neccessary.  
+To use this module, import FVS and call FVS() just as a regular function. The function can take 6 paramters listed below and only the first (the graph) is neccessary.
+
+This was tested in anaconda3 creating an environment "py37_FVS" with Python=3.7, networkx=1.1, and jupyter:
+
+```
+conda create -n py3_FVS python=3.7 networkx=1.11
+conda install jupyter
+```
+
+From there, the FVS_python3 folder with the contents of the repository was moved to "anaconda3/envs/py37_FVS/lib/python3.7/site-packages".  
 
 Parameters
 ----------
@@ -46,20 +54,27 @@ Returns
 An approximation of the minimum FVS of the given graph as a list.
 
 # IV) EXAMPLES
->>>import networkx as nx  
->>>from FVS_python3 import FVS as FVS
 
-Here we construct an example with an optimal solution. G2_FVS shoule be ['A'] as a list.  
->>>G2=nx.DiGraph()  
->>>G2.add_edges_from([('A','B'),('B','C'),('C','A'),('A','D'),('D','A')])  
->>>G2_FVS=FVS.FVS(G2)  
+```
+import networkx as nx  
+from FVS_python3 import FVS as FVS
+```
+Here we construct an example with an optimal solution. G2_FVS shoule be ['A'] as a list.
+
+```  
+G2=nx.DiGraph()  
+G2.add_edges_from([('A','B'),('B','C'),('C','A'),('A','D'),('D','A')])  
+G2_FVS=FVS.FVS(G2)
+```
 
 Here we construct an example of three-node feedback loops.   
 We show how you change all the parameters and set a random seed.  
 Your result should be the same with the same randomseed.  
->>>G3=nx.DiGraph()  
->>>G3.add_edges_from([('A','B'),('B','C'),('C','A')])   
->>>G3_FVS=FVS.FVS(G3, T_0=0.6, alpha=0.99, maxMvt_factor=5, maxFail=50, randomseed=1)  
+```  
+G3=nx.DiGraph()  
+G3.add_edges_from([('A','B'),('B','C'),('C','A')])   
+G3_FVS=FVS.FVS(G3, T_0=0.6, alpha=0.99, maxMvt_factor=5, maxFail=50, randomseed=1) 
+``` 
 
 
 
