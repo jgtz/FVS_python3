@@ -29,7 +29,18 @@ This was tested in anaconda3 creating an environment "py37_FVS" with Python=3.7 
 conda create -n py3_FVS python=3.7 networkx=1.11
 ```
 
-From there, the FVS_python3 folder with the contents of the repository was moved to "anaconda3/envs/py37_FVS/lib/python3.7/site-packages".  
+From there, the FVS_python3 folder with the contents of the repository was moved to *anaconda3/envs/py37_FVS/lib/python3.7/site-packages*. With that, the *FVS_test.py* runs as it should:
+
+```
+python FVS_test.py
+
+[(0, 4), (0, 1), (1, 0), (2, 1), (2, 4), (2, 5), (2, 3), (3, 5), (3, 4), (4, 1), (5, 2), (5, 0)]
+[0, 2]
+[('A', 'B'), ('A', 'D'), ('B', 'C'), ('C', 'A'), ('D', 'A')]
+['A']
+[('A', 'B'), ('B', 'C'), ('C', 'A')]
+['B']
+```
 
 Parameters
 ----------
