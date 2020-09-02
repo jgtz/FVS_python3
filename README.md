@@ -23,11 +23,10 @@ FVS_test.py contains three examples illustrating how to use the code.
 
 To use this module, import FVS and call FVS() just as a regular function. The function can take 6 paramters listed below and only the first (the graph) is neccessary.
 
-This was tested in anaconda3 creating an environment "py37_FVS" with Python=3.7, networkx=1.1, and jupyter:
+This was tested in anaconda3 creating an environment "py37_FVS" with Python=3.7 and networkx=1.1:
 
 ```
 conda create -n py3_FVS python=3.7 networkx=1.11
-conda install jupyter
 ```
 
 From there, the FVS_python3 folder with the contents of the repository was moved to "anaconda3/envs/py37_FVS/lib/python3.7/site-packages".  
