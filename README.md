@@ -5,9 +5,9 @@ This repository contains functions used to approximate the minimum feedback vert
 
 This algorithm identifies a near-minimum feedback vertex set using simulated annealing (SA) and a local search of topological ordering. The algorithm is describe in the paper "Galinier, P., Lemamou, E. & Bouzidi, M.W. J Heuristics (2013) 19: 797. doi:10.1007/s10732-013-9224-z". The code follows the pseudocode given in Page 805 in that paper.
 
-The code is written in Python 2.7. The module requires NetworkX 1.11.
+The originally code was written in Python 2.7, and this updated version seems to work for Python 3 (although it is still not fully tested). The module requires NetworkX 1.11.
 
-Another version written in Cython is available at https://github.com/yanggangthu/FVS_cython. The cython version is typically 5-10 times faster than the python version.
+Another version written in Cython is available at https://github.com/yanggangthu/FVS_cython. The cython version is typically 5-10 times faster than the python version. It has not been updated for use in Python 3.
 
 
 # II) STRUCTURE OF MODULE
