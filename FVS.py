@@ -4,7 +4,7 @@ This file contains functions used to calculate feedback vertex set for graph/dir
 
 import networkx as nx
 #import FVS_localsearch_10_cython as FVS10
-import FVS_localsearch_10_python as FVS10
+import FVS_python3.FVS_localsearch_10_python as FVS10
 
 def python_format(Ginput):
   '''
