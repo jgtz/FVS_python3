@@ -47,7 +47,7 @@ An approximation of the minimum FVS of the given graph as a list.
 
 # IV) EXAMPLES
 >>>import networkx as nx  
->>>import FVS  
+>>>from FVS_python3 import FVS as FVS
 
 Here we construct an example with an optimal solution. G2_FVS shoule be ['A'] as a list.  
 >>>G2=nx.DiGraph()  
