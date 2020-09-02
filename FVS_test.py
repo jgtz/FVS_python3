@@ -4,7 +4,7 @@ This file contains test cases to test the FVS function.
 
 import networkx as nx
 import random
-import FVS
+from FVS_python3 import FVS as FVS
 
 
 #A random graph example
